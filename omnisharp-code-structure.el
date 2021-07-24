@@ -14,6 +14,22 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+(require 'cl)
+(require 'cl-lib)
+(require 'csharp-mode)
+(require 'json)
+(require 'files)
+(require 'ido)
+(require 'thingatpt)
+(require 'dash)
+(require 'compile)
+(require 'dired)
+(require 'popup)
+(require 'etags)
+(require 'flycheck)
+(require 's)
+(require 'f)
+
 (defun omnisharp--cs-inspect-buffer (callback)
   "Calls into the /v2/codestructure endpoint to retrieve code structure for
 the current buffer from the server and invokes CALLBACK with single argument

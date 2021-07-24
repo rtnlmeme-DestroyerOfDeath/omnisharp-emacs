@@ -14,6 +14,22 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+(require 'cl)
+(require 'cl-lib)
+(require 'csharp-mode)
+(require 'json)
+(require 'files)
+(require 'ido)
+(require 'thingatpt)
+(require 'dash)
+(require 'compile)
+(require 'dired)
+(require 'popup)
+(require 'etags)
+(require 'flycheck)
+(require 's)
+(require 'f)
+
 (defun omnisharp--prepare-solution-errors-buffer ()
   "Makes a new *omnisharp-solution-errors* buffer or creates a new one
 and enabled compilation-mode on the buffer."

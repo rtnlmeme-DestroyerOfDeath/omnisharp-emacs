@@ -13,6 +13,22 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+(require 'cl)
+(require 'cl-lib)
+(require 'csharp-mode)
+(require 'json)
+(require 'files)
+(require 'ido)
+(require 'thingatpt)
+(require 'dash)
+(require 'compile)
+(require 'dired)
+(require 'popup)
+(require 'etags)
+(require 'flycheck)
+(require 's)
+(require 'f)
 (defun omnisharp-code-format-entire-file ()
   "Format the code in the current file. Replaces the file contents
 with the formatted result."

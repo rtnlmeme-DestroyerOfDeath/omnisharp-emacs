@@ -14,6 +14,22 @@
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+(require 'cl)
+(require 'cl-lib)
+(require 'csharp-mode)
+(require 'json)
+(require 'files)
+(require 'ido)
+(require 'thingatpt)
+(require 'dash)
+(require 'compile)
+(require 'dired)
+(require 'popup)
+(require 'etags)
+(require 'flycheck)
+(require 's)
+(require 'f)
+
 (defun omnisharp--path-to-server (path)
   (if (and path (eq system-type 'cygwin))
       (cygwin-convert-file-name-to-windows path)

@@ -13,6 +13,22 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
+(require 'cl)
+(require 'cl-lib)
+(require 'csharp-mode)
+(require 'json)
+(require 'files)
+(require 'ido)
+(require 'thingatpt)
+(require 'dash)
+(require 'compile)
+(require 'dired)
+(require 'popup)
+(require 'etags)
+(require 'flycheck)
+(require 's)
+(require 'f)
 (defun omnisharp-current-type-information (&optional add-to-kill-ring)
   "Display information of the current type under point. With prefix
 argument, add the displayed result to the kill ring. This can be used
