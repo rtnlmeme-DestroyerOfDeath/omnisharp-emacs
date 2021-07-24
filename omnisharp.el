@@ -491,6 +491,7 @@ locations in the json."
         (cdr (assoc 'QuickFixes response)))
        (mapcar (lambda (it)
                  (flycheck-error-new
+                  :id (assoc-default 'Id it)
                   :buffer buffer
                   :checker checker
                   :filename (omnisharp--get-filename it)
